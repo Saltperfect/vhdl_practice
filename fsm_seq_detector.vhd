@@ -18,9 +18,9 @@ syncronous_process : process (clk, reset)
 begin 
 if rising_edge(clk) then 
     if reset = '1' then 
-        current = st1;
+        current <= st1;
     else 
-        current = next;
+        current <= next;
     end if;
 end if;
 end proccess;
